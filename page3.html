@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="secret-box">
+            <h2>Secret Information</h2>
+            <p>Username: <span id="storedUsername"></span></p>
+            <p>Password: <span id="storedPassword"></span></p>
+            <button id="backButton">Back to Login</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('storedUsername').innerText = localStorage.getItem('username');
+            document.getElementById('storedPassword').innerText = localStorage.getItem('password');
+            document.getElementById('backButton').addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>

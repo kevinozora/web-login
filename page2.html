@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="access-box">
+            <h2>Enter Access Code</h2>
+            <p>Silahkan akses terlebih dahulu dengan password</p>
+            <form id="accessForm">
+                <input type="password" id="accessCode" placeholder="Access Code" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('accessForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const accessCode = document.getElementById('accessCode').value;
+            if (accessCode === 'SMATELKOM') {
+                window.location.href = 'page3.html';
+            } else {
+                alert('Invalid access code');
+            }
+        });
+    </script>
+</body>
+</html>

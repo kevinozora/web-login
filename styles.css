@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box, .access-box, .secret-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 2rem;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+button[type="submit"], button[type="button"] {
+    background: #3897f0;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background: #3185d3;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.or hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+}
+
+.or span {
+    margin: 0 1rem;
+    color: #8e8e8e;
+    font-weight: bold;
+}
+
+.facebook-login {
+    background: none;
+    color: #3897f0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 1rem;
+    text-align: center;
+    width: 350px;
+}
+
+.signup-box p {
+    margin: 0;
+}
+
+.signup-box a {
+    color: #3897f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.access-box p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #8e8e8e;
+}
